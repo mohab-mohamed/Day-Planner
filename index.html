@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Day Planner</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Day Planner</h1>
+        <p class="lead" id="today">
+        
+        </p>
+      </div>
+    </div>
+    <div class="centerContainer">
+      <ul class="list-group">
+        <li
+          class="list-group-item d-flex justify-content-between align-items-center"
+          id="9time"
+        >
+          <span class="badge badge-dark badge-pill">9:00 am</span>
+          <input
+            class="inputArea"
+            type="text"
+            value=""
+            placeholder="Input Event Here"
+            id="9"
+          />
+          <span class="badge badge-light badge-pill saveButton" id="9save"><img width="10" height="10" src="save.svg"></img></span>
+        </li>
+        <li
+          class="list-group-item d-flex justify-content-between align-items-center"
+          id="10time"
+        >
+          <span class="badge badge-dark badge-pill">10:00 am</span>
+          <input
+            class="inputArea"
+            type="text"
+            value=""
+            placeholder="Input Event Here"
+            id="10"
+          />
+          <span class="badge badge-light badge-pill saveButton" id="10save"><img width="10" height="10" src="save.svg"></img></span>
+        </li>
+        <li
+          class="list-group-item d-flex justify-content-between align-items-center"
+          id="11time"
+        >
+          <span class="badge badge-dark badge-pill">11:00 am</span>
+          <input
+            class="inputArea"
+            type="text"
+            value=""
+            placeholder="Input Event Here"
+            id="11"
+          />
+          <span class="badge badge-light badge-pill saveButton" id="11save"><img width="10" height="10" src="save.svg"></img></span>
+        </li>
+        <li
+          class="list-group-item d-flex justify-content-between align-items-center"
+          id="12time"
+        >
+          <span class="badge badge-dark badge-pill">12:00 pm</span>
+          <input
+            class="inputArea"
+            type="text"
+            value=""
+            placeholder="Input Event Here"
+            id="12"
+          />
+          <span class="badge badge-light badge-pill saveButton" id="12save"><img width="10" height="10" src="save.svg"></img></span>
+        </li>
+        <li
+          class="list-group-item d-flex justify-content-between align-items-center"
+          id="1time"
+        >
+          <span class="badge badge-dark badge-pill">1:00 pm</span>
+          <input
+            class="inputArea"
+            type="text"
+            value=""
+            placeholder="Input Event Here"
+            id="1"
+          />
+          <span class="badge badge-light badge-pill saveButton" id="1save"><img width="10" height="10" src="save.svg"></img></span>
+        </li>
+        <li
+          class="list-group-item d-flex justify-content-between align-items-center"
+          id="2time"
+        >
+          <span class="badge badge-dark badge-pill" >2:00 pm</span>
+          <input
+            class="inputArea"
+            type="text"
+            value=""
+            placeholder="Input Event Here"
+            id="2"
+          />
+          <span class="badge badge-light badge-pill saveButton" id="2save"><img width="10" height="10" src="save.svg"></img></span>
+        </li>
+        <li
+          class="list-group-item d-flex justify-content-between align-items-center"
+          id="3time"
+        >
+          <span class="badge badge-dark badge-pill" >3:00 pm</span>
+          <input
+            class="inputArea"
+            type="text"
+            value=""
+            placeholder="Input Event Here"
+            id="3"
+          />
+          <span class="badge badge-light badge-pill saveButton" id="3save"><img width="10" height="10" src="save.svg"></img></span>
+        </li>
+        <li
+          class="list-group-item d-flex justify-content-between align-items-center"
+          id="4time"
+        >
+          <span class="badge badge-dark badge-pill" >4:00 pm</span>
+          <input
+            class="inputArea"
+            type="text"
+            value=""
+            placeholder="Input Event Here"
+            id="4"
+          />
+          <span class="badge badge-light badge-pill saveButton" id="4save"><img width="10" height="10" src="save.svg"></img></span>
+        </li>
+        <li
+          class="list-group-item d-flex justify-content-between align-items-center"
+          id="5time"
+        >
+          <span class="badge badge-dark badge-pill">5:00 pm</span>
+          <input
+            class="inputArea"
+            type="text"
+            value=""
+            placeholder="Input Event Here"
+            id="5"
+          />
+          <span class="badge badge-light badge-pill saveButton" id="5save"><img width="10" height="10" src="save.svg"></img></span>
+        </li>
+      </ul>
+    </div>
+
+    <div id="passwordModal" class="modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <!-- <h1 class="modal-title">Transaction</h1> -->
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form class="passwordForm">
+              <div class="form-group">
+                <label
+                  ><strong> Password Length: &nbsp;</strong>
+                  <span id="sliderOutput"></span
+                ></label>
+                <div class="slidecontainer">
+                  <input
+                    type="range"
+                    min="8"
+                    max="128"
+                    value="8"
+                    class="slider"
+                    id="myRange"
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <div>
+                  <label><strong>Included Character Types</strong></label>
+                  <br />
+                  <div class="checkboxes">
+                    <label>Lowercase:&nbsp; </label
+                    ><input type="checkbox" id="lower" name="LowerCase" />
+                    <label>Uppercase:&nbsp; </label
+                    ><input type="checkbox" id="upper" name="UpperCase" />
+                    <label>Numeric:&nbsp; </label
+                    ><input type="checkbox" id="numeric" name="Numeric" />
+                    <label>Special:&nbsp; </label
+                    ><input type="checkbox" id="special" name="Special" />
+                  </div>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <!-- <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.26.0/moment.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

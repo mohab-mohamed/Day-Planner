@@ -1,0 +1,22 @@
+.list-group-item {
+  width: 80vw;
+margin-top: 15px;
+}
+
+.centerContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputArea{
+  border: none;
+  width: 60%;
+  z-index: 100;
+}
+
+.saveButton {
+  cursor: pointer;
+}
+
